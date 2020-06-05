@@ -1,5 +1,6 @@
 // Github username set to user variable
 const user = "itsmdsameerkhan";
+// Change above username with your github username
 
 async function getInfo(username) {
   let response = await fetch(`https://api.github.com/users/${username}`);
