@@ -1,5 +1,5 @@
 // Github username set to user variable
-const githubUsername = "itsmdsameerkhan";
+const githubUsername = "poudyalanil";
 // Change above username with your github username
 
 async function getInfo(username) {
