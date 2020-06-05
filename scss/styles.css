@@ -1,0 +1,78 @@
+.container {
+  max-width: 980px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #f2f2f2;
+}
+
+.container .header {
+  text-align: center;
+}
+
+.container .header .profile-photo {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container .header #name {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.container .header .more-info {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.container .header .more-info .twitter-url {
+  color: #2caae1;
+}
+
+.container .header .more-info .website-url {
+  color: #e2686d;
+}
+
+.container .header .follow-info {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.container .section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .section.repo-section .repo-collection {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.container .section.repo-section .repo-count {
+  float: right;
+}
+
+.container .section .sub-heads {
+  font-size: 1.5rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*# sourceMappingURL=styles.css.map */

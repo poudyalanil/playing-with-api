@@ -1,0 +1,85 @@
+$secondary-color: #f2f2f2;
+$twitter: #2caae1;
+
+.container {
+  max-width: 980px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: $secondary-color;
+
+  & .header {
+    text-align: center;
+
+    & .profile-photo {
+      width: 20%;
+      border-radius: 50%;
+    }
+
+    & #name {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    & .more-info {
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+
+      & .twitter-url {
+        color: $twitter;
+      }
+
+      & .website-url {
+        color: #e2686d;
+      }
+    }
+
+    & .follow-info {
+      font-weight: 500;
+      margin-top: 0;
+    }
+  }
+
+  & .section {
+    width: 80%;
+    margin: 0 auto;
+
+    &.repo-section {
+      & .repo-collection {
+        height: 300px;
+        overflow-y: scroll;
+      }
+
+      & .repo-count {
+        float: right;
+      }
+    }
+
+    & .sub-heads {
+      font-size: 1.5rem;
+      //   text-align: center;
+    }
+  }
+}
+
+// Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
