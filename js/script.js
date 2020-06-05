@@ -1,5 +1,5 @@
 // Github username set to user variable
-const user = "itsmdsameerkhan";
+const githubUsername = "itsmdsameerkhan";
 // Change above username with your github username
 
 async function getInfo(username) {
@@ -14,7 +14,7 @@ async function getRepoInfo(username) {
   return data;
 }
 
-getInfo(user).then((data) => {
+getInfo(githubUsername).then((data) => {
   document.querySelector(".profile-photo").setAttribute("src", data.avatar_url);
   document.getElementById("name").innerHTML = data.name;
 
@@ -38,7 +38,7 @@ getInfo(user).then((data) => {
 
   // Repositories List Out
 
-  getRepoInfo(user).then((data) => {
+  getRepoInfo(githubUsername).then((data) => {
     let allRepoArr = data.map((eachRepo) => eachRepo.name);
 
     allRepoArr.forEach((element) => {
@@ -46,13 +46,23 @@ getInfo(user).then((data) => {
       let textOfNode = document.createTextNode(`${element}`);
       node.appendChild(textOfNode);
       node.className = "collection-item";
-      node.setAttribute("href", `https://github.com/${user}/${element}`);
+      node.setAttribute(
+        "href",
+        `https://github.com/${githubUsername}/${element}`
+      );
       document.querySelector(".repo-collection").appendChild(node);
     });
 
     document.querySelector(
       ".repo-count"
     ).innerHTML = `Total Public Repositories: ${allRepoArr.length}`;
+
+    document
+      .querySelector(".twitter-timeline")
+      .setAttribute(
+        "href",
+        `https://twitter.com/${data.twitter_username}?ref_src=twsrc%5Etfw`
+      );
   });
 
   // End of Repo

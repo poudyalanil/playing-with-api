@@ -12,7 +12,7 @@ $twitter: #2caae1;
     text-align: center;
 
     & .profile-photo {
-      width: 20%;
+      width: 30%;
       border-radius: 50%;
     }
 
@@ -41,7 +41,8 @@ $twitter: #2caae1;
   }
 
   & .section {
-    width: 80%;
+    max-width: 900px;
+    width: 95%;
     margin: 0 auto;
 
     &.repo-section {
