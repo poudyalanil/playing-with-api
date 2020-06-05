@@ -66,4 +66,8 @@ getInfo(githubUsername).then((data) => {
   });
 
   // End of Repo
+
+  let loader = document.querySelector(".flex-container");
+  loader.parentNode.removeChild(loader);
+  document.querySelector(".container").removeAttribute("hidden");
 });
